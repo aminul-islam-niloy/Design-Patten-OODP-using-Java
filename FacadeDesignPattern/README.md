@@ -2,19 +2,34 @@
 The facade pattern is similar to a facade in architecture. It's an object that serves as a front-facing interface that hides more complex underlying or structural code.
 The facade pattern provides a simplified interface to a more complex logic or functionality. It hides the complexities of the system and provides an interface to the client
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Problem Statement:
+Write a Java program to demonstrate the implementation of a façade design pattern for a Banking Service with Checking, Saving, and Investment modules.
 
-## Folder Structure
+## Components
 
-The workspace contains two folders by default, where:
+The banking system consists of the following major components:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Account Interface**: An interface that defines common banking operations such as deposit, withdraw, transfer, and getAccountNumber.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **ChequingAccount**: A class implementing the Account interface for chequing accounts.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **SavingAccount**: A class implementing the Account interface for saving accounts.
 
-## Dependency Management
+- **InvestmentAccount**: A class implementing the Account interface for investment accounts.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **BankService**: A service class that manages accounts using a Hashtable. It provides methods to create new accounts, deposit money, withdraw money, and transfer money between accounts.
+
+- **Customer**: A class that demonstrates the usage of the banking system by creating accounts and performing transactions.
+
+## Usage
+
+To use the banking system:
+
+1. Create instances of different types of accounts using the `BankService` class.
+
+2. Deposit money into accounts using the `depositMoney` method.
+
+3. Withdraw money from accounts using the `withdrawMoney` method.
+
+4. Transfer money between accounts using the `transferMoney` method.
+
