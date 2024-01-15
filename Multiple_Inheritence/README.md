@@ -1,18 +1,21 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Problem Statement:
+ Write a Java Program to Demonstrate Multiple Inheritance.
 
-## Folder Structure
+## Classes
+### Music Interface
 
-The workspace contains two folders by default, where:
+- `playMusic()`: Defines the method for playing music.
+- `deleteMedia()`: Defines the method for deleting media.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Video Interface
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- `playVideo()`: Defines the method for playing videos.
+- `deleteMedia()`: Defines the method for deleting media.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Computer Class
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Implements both the `Music` and `Video` interfaces.
+- Provides concrete implementations for all the methods defined in these interfaces.
+- Allows playing music, playing videos, and deleting media.
